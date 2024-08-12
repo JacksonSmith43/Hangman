@@ -1,0 +1,28 @@
+.instructions {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.language-selection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    outline: 0.5rem solid red;
+    border-radius: 15rem;
+    margin: 10rem 2rem 2rem 2rem;
+    padding: 4rem 0rem 2rem 0rem;
+
+    text-decoration: none;
+    font-family: sans-serif;
+    color: black;
+    font-size: 2rem;
+}
+
+a:hover {
+    background-color: red;
+}
+
+a:active {
+    background-color: orange;
+}

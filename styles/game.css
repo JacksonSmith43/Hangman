@@ -1,0 +1,17 @@
+.game-instructions{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 2rem;
+    margin-top: 3rem;
+}
+
+
+#game-buttons{
+    text-align: center;
+    display: flex;
+    margin-left: 45rem;
+}
+
+#exit-game{
+    margin-right: 2rem;
+}
