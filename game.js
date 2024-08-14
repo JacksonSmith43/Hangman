@@ -3,12 +3,12 @@ document.addEventListener("DOMContentLoaded", function () {
     let exitGame = document.getElementById("exit-game");
     let nextWord = document.getElementById("next-word");
     let word = document.getElementById("random-word");
+    let wordLength = document.getElementById("word-length");
 
     const LIVES = 11;
     let usedLetters = [LIVES];
     let incorrectLetter = [];
     let correctLetter = [];
-    let wordsArray = ["miscellaneous", "music", "apple", "compiler"];
 
 
     exitGame.addEventListener("click", function () {
@@ -16,9 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     nextWord.addEventListener("click", function () {
-        let wordsArray = ["miscellaneous", "music", "apple", "compiler"];
-        var randomWord = wordsArray[Math.floor(Math.random() * wordsArray.length)];
-        word.textContent = randomWord;
+        randomWordGenerator();
     });
 
 
@@ -31,8 +29,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     function randomWordGenerator() {
-        //let wordsArray = ["miscellaneous", "music", "apple", "compiler"];
+        let wordsArray = ["miscellaneous", "music", "apple", "compiler"];
+        let randomWord = wordsArray[Math.floor(Math.random() * wordsArray.length)];
+        let lengthOfWord = randomWord.length;
+        let dash = '';
 
+        for (let i = 0; i < lengthOfWord; i++) {
+            dash += '-';
+        }
+        wordLength.textContent = lengthOfWord;
+        word.textContent = dash;
+        return 1;
     }
 
 

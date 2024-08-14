@@ -1,4 +1,4 @@
-.game-instructions{
+.game-instructions {
     text-align: center;
     font-family: sans-serif;
     font-size: 2rem;
@@ -6,7 +6,8 @@
 }
 
 
-#random-word{
+#random-word,
+#word-length {
     text-align: center;
     font-family: sans-serif;
     font-weight: bold;
@@ -15,12 +16,16 @@
     margin-top: 3rem;
 }
 
-#game-buttons{
+#random-word {
+    letter-spacing: 6rem;
+}
+
+#game-buttons {
     text-align: center;
     display: flex;
     margin-top: 3rem;
 }
 
-#exit-game{
+#exit-game {
     margin-right: 2rem;
 }
