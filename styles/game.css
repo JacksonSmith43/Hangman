@@ -6,7 +6,7 @@
 }
 
 
-#random-word,
+#word,
 #word-length {
     text-align: center;
     font-family: sans-serif;
@@ -16,8 +16,13 @@
     margin-top: 3rem;
 }
 
-#random-word {
+#word,
+#user-input {
     letter-spacing: 6rem;
+}
+
+#user-input {
+    margin-left: 50.5rem;
 }
 
 #game-buttons {

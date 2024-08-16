@@ -2,23 +2,34 @@ document.addEventListener("DOMContentLoaded", function () {
 
     let exitGame = document.getElementById("exit-game");
     let nextWord = document.getElementById("next-word");
-    let word = document.getElementById("random-word");
+    let word = document.getElementById("word");
     let wordLength = document.getElementById("word-length");
+    let userInput = document.getElementById("user-input");
+    let submitButton = document.getElementById("submit-button");
 
     const LIVES = 11;
-    let usedLetters = [LIVES];
+    let usedLetters = [];
     let incorrectLetter = [];
     let correctLetter = [];
+    let wordsArray = ["miscellaneous", "music", "apple", "compiler"];
+    let randomWord = wordsArray[Math.floor(Math.random() * wordsArray.length)];
+    let lengthOfWord = randomWord.length;
+    let dash = '';
 
+    for (let i = 0; i < lengthOfWord; i++) {
+        dash += '-';
+    }
+    wordLength.textContent = `Länge des Wortes: ${lengthOfWord}`;
+    word.textContent = dash;
 
     exitGame.addEventListener("click", function () {
-        window.location.href = "../index.html"
+        window.location.href = "../index.html";
     });
+
 
     nextWord.addEventListener("click", function () {
-        randomWordGenerator();
+        window.location.reload();
     });
-
 
     document.addEventListener("keydown", function (event) {
 
@@ -28,19 +39,30 @@ document.addEventListener("DOMContentLoaded", function () {
     })
 
 
-    function randomWordGenerator() {
-        let wordsArray = ["miscellaneous", "music", "apple", "compiler"];
-        let randomWord = wordsArray[Math.floor(Math.random() * wordsArray.length)];
-        let lengthOfWord = randomWord.length;
-        let dash = '';
+    submitButton.addEventListener("click", function () {
 
-        for (let i = 0; i < lengthOfWord; i++) {
-            dash += '-';
+        let userLetter = userInput.value.toLowerCase();
+
+        if (userLetter.length === 0 || usedLetters.includes(userLetter)) {
+            return;
         }
-        wordLength.textContent = lengthOfWord;
+
+        usedLetters.push(userLetter);
+        let newDash = '';
+
+        for (let i = 0; i < randomWord.length; i++) {
+            if (randomWord[i] === userLetter) {
+                newDash += userLetter;
+
+            } else {
+                newDash += dash[i];
+            }
+        }
+
+        dash = newDash;
         word.textContent = dash;
-        return 1;
-    }
+        userInput.value = '';
+    });
 
 
 });
