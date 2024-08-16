@@ -19,25 +19,24 @@
         </div>
     </div>
 
+
     <div class="row">
         <div class="col">
-            <p id="word"></p>
-            <!-- <p id="obscured-word"> </p>-->
             <p id="word-length">Länge des Wortes: </p>
-            <input id="user-input" type="text" maxlength="1">
-            <button id="submit-button">Submit letter</button>
         </div>
     </div>
 
 
-    <div class="row" id="game-buttons">
+    <div class="row">
         <div class="col">
-            <button type="button" class="btn btn-danger" id="exit-game">Spiel verlassen</button>
+            <div id="word-inputs" class="d-flex justify-content-center"></div>
+            <div class="col" id="incorrect-letters">Incorrect letters: </div>
         </div>
-        <div class="col">
-            <button type="button" class="btn btn-primary" id="next-word">Nächstes wort</button>
-        </div>
+    </div>
 
+    <div id="game-buttons">
+        <button type="button" class="btn btn-danger" id="exit-game">Spiel verlassen</button>
+        <button type="button" class="btn btn-primary" id="next-word">Nächstes wort</button>
     </div>
 
 </body>

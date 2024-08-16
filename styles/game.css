@@ -6,8 +6,7 @@
 }
 
 
-#word,
-#word-length {
+#word-length, #incorrect-letters {
     text-align: center;
     font-family: sans-serif;
     font-weight: bold;
@@ -16,21 +15,20 @@
     margin-top: 3rem;
 }
 
-#word,
-#user-input {
-    letter-spacing: 6rem;
+
+input[type=text] {
+    border-bottom: 2px solid black;
 }
 
-#user-input {
-    margin-left: 50.5rem;
-}
+
 
 #game-buttons {
-    text-align: center;
     display: flex;
-    margin-top: 3rem;
+    justify-content: center; /* Centers the buttons horizontally. */
+    align-items: center;  /* In case necessary, it spaces the buttons vertically. */
+    margin-top: 4rem;
 }
 
-#exit-game {
-    margin-right: 2rem;
+#game-buttons button {
+    margin: 0 2rem; /* Spacing between the buttons. */
 }
