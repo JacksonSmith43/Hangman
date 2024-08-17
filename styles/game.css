@@ -2,17 +2,19 @@
     text-align: center;
     font-family: sans-serif;
     font-size: 2rem;
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 
 
-#word-length, #incorrect-letters {
+#word-length,
+#incorrect-letters,
+#lives-left {
     text-align: center;
     font-family: sans-serif;
     font-weight: bold;
     font-size: 2rem;
 
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 
 
@@ -24,11 +26,19 @@ input[type=text] {
 
 #game-buttons {
     display: flex;
-    justify-content: center; /* Centers the buttons horizontally. */
-    align-items: center;  /* In case necessary, it spaces the buttons vertically. */
-    margin-top: 4rem;
+    justify-content: center;
+    /* Centers the buttons horizontally. */
+    align-items: center;
+    /* In case necessary, it spaces the buttons vertically. */
+    margin-top: 2rem;
 }
 
 #game-buttons button {
-    margin: 0 2rem; /* Spacing between the buttons. */
+    margin: 0 2rem;
+    /* Spacing between the buttons. */
+}
+
+#lives-status-container {
+    margin-top: 2rem;
+    text-align: center;
 }
