@@ -1,0 +1,11 @@
+#invented-word-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#invented-word {
+    margin-right: 1rem;
+}

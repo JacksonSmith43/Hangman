@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/game.css">
+    <link rel="stylesheet" href="/css/multi_player.css">
+    <script src="/js/multi_player.js"></script>
+
+</head>
+
+<body>
+
+
+    <div class="row">
+        <div class="col">
+            <h2 class="game-instructions">Player 1: Enter a word.</h2>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col" id="invented-word-container">
+            <input id="invented-word" type="text" placeholder="Word for player 2.">
+            <button id="submit-invented-word-button" class="btn btn-primary">Submit word</button>
+        </div>
+    </div>
+
+    <div id="game-buttons">
+        <button type="button" class="btn btn-danger" id="exit-game">Spiel verlassen</button>
+        <button type="button" class="btn btn-primary" id="next-word">Nächstes wort</button>
+    </div>
+
+    <div id="lives-status-container" class="center"></div>
+
+
+</body>
+
+</html>

@@ -58,6 +58,11 @@ document.addEventListener("DOMContentLoaded", function () {
             input.value = letter;
             input.style.background = "rgb(156, 202, 156)";
 
+            if (LIVES === 5) {
+                img.src = "../images/black_knight_all_limbs.png"
+                src.appendChild(img);
+            }
+
             lengthOfWord--;
 
             if (lengthOfWord == 0) {
