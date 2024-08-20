@@ -1,11 +1,11 @@
-#invented-word-container {
+#inputed-word-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 2rem;
 }
 
 
-
-#invented-word {
+#inputed-word {
     margin-right: 1rem;
 }

@@ -30,7 +30,7 @@ input[type=text] {
     /* Centers the buttons horizontally. */
     align-items: center;
     /* In case necessary, it spaces the buttons vertically. */
-    margin-top: 2rem;
+    margin-top: 3rem;
 }
 
 #game-buttons button {
