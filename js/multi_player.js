@@ -31,6 +31,11 @@ document.addEventListener("DOMContentLoaded", function () {
         lengthOfWord = inputedWord.value.length;
         wordLength.textContent = `Länge des Wortes: ${lengthOfWord}`;
 
+        if (lengthOfWord === 0) {
+            alert("Enter a word.");
+            console.log("Enter a word.");
+        }
+
         for (let i = 0; i < lengthOfWord; i++) {
             let inputField = document.createElement("input");
             inputField.setAttribute("type", "text");
@@ -49,7 +54,6 @@ document.addEventListener("DOMContentLoaded", function () {
         let index = input.getAttribute("data-index");
         let letter = input.value.toLowerCase();
         let savedWord = localStorage.getItem("savedWord");
-
 
         if (savedWord[index] === letter) {
             input.value = letter;
@@ -93,14 +97,14 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("player-two-container").style.display = 'none';
         inputedWord.value = "";
         img.parentNode.removeChild(img);
+        localStorage.removeItem("savedWord");
+        window.location.reload();
     });
 
 
     exitGame.addEventListener("click", function () {
         window.location.href = "../index.html";
     });
-
-
 
 
     function checksLivesPictureStatus() {

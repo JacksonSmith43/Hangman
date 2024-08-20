@@ -43,6 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     nextWord.addEventListener("click", function () {
+        img.parentNode.removeChild(img);
         window.location.reload();
     });
 

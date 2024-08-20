@@ -26,3 +26,8 @@ a:hover {
 a:active {
     background-color: orange;
 }
+    
+.mode-selection:focus {
+    outline: 0.5rem solid blue;
+
+}
