@@ -53,8 +53,6 @@ document.addEventListener("DOMContentLoaded", function () {
         let index = input.getAttribute("data-index");
         let letter = input.value.toLowerCase();
 
-        checksLivesPictureStatus();
-
         if (randomWord[index] === letter) {
             input.value = letter;
             input.style.background = "rgb(156, 202, 156)";
@@ -87,6 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
             livesLeft.textContent = `Leben übrig: ${LIVES}`;
 
         }
+        checksLivesPictureStatus();
 
     });
 
@@ -100,32 +99,32 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function checksLivesPictureStatus() {
         switch (LIVES) {
-            case 6:
+            case 5:
                 img.src = "../images/single_player/black_knight_all_limbs.png"
                 src.appendChild(img);
                 break;
 
-            case 5:
+            case 4:
                 img.src = "../images/single_player/black_knight_three_limbs.png"
                 src.appendChild(img);
                 break;
 
-            case 4:
+            case 3:
                 img.src = "../images/single_player/black_knight_two_limbs.png"
                 src.appendChild(img);
                 break;
 
-            case 3:
+            case 2:
                 img.src = "../images/single_player/black_knight_one_limb.png"
                 src.appendChild(img);
                 break;
 
-            case 2:
+            case 1:
                 img.src = "../images/single_player/black_knight_no_limbs.png"
                 src.appendChild(img);
                 break;
 
-            case 1:
+            case 0:
                 img.src = "../images/single_player/gallows.png"
                 src.appendChild(img);
                 break;

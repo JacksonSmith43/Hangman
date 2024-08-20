@@ -26,16 +26,13 @@ input[type=text] {
 
 #game-buttons {
     display: flex;
-    justify-content: center;
-    /* Centers the buttons horizontally. */
-    align-items: center;
-    /* In case necessary, it spaces the buttons vertically. */
+    justify-content: center; /* Centers the buttons horizontally. */
+    align-items: center; /* In case necessary, it spaces the buttons vertically. */
     margin-top: 3rem;
 }
 
 #game-buttons button {
-    margin: 0 2rem;
-    /* Spacing between the buttons. */
+    margin: 0 2rem; /* Spacing between the buttons. */
 }
 
 #lives-status-container {
@@ -43,5 +40,9 @@ input[type=text] {
     text-align: center;
 }
 
-/* Single-Plyer specific start. */
-/* Single-Plyer specific end. */
+
+.btn:focus,
+input:focus {
+    outline: 2px solid red;
+
+}
