@@ -16,21 +16,25 @@
 <body>
 
 
-    <div class="row">
-        <div class="col">
-            <h2 class="game-instructions">Player 1: Enter a word.</h2>
-        </div>
-    </div>
-
-    <div class="row">
+    <div class="row" id="player-one-container">
+        <h2 class="game-instructions">Player 1: Enter a word.</h2>
         <div class="col" id="inputed-word-container">
-            <form>
+            <form id="player-one-form">
                 <input id="inputed-word" type="text" placeholder="Word for player 2.">
                 <button id="submit-inputed-word-button" class="btn btn-primary">Submit word</button>
                 <div class="outputed-word"></div>
             </form>
         </div>
     </div>
+
+    <div class="row" id="player-two-container" style="display: none;">
+        <div class="col">
+            <div id="word-inputs" class="d-flex justify-content-center"></div>
+            <div class="col" id="incorrect-letters">Falsche buchstaben: </div>
+            <div class="col" id="lives-left">Leben übrig: </div>
+        </div>
+    </div>
+
 
     <div id="game-buttons">
         <button type="button" class="btn btn-danger" id="exit-game">Spiel verlassen</button>
