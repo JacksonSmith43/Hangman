@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     livesLeft.textContent = `Leben übrig: ${LIVES}`;
     wordLength.textContent = `Länge des Wortes: ${lengthOfWord}`;
-    img.src = "../images/black_knight_all_limbs.png"
+    img.src = "../images/single_player/black_knight_all_limbs.png"
     src.appendChild(img);
 
     for (let i = 0; i < lengthOfWord; i++) {
@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
             input.style.background = "rgb(156, 202, 156)";
 
             if (LIVES === 5) {
-                img.src = "../images/black_knight_all_limbs.png"
+                img.src = "../images/single_player/black_knight_all_limbs.png"
                 src.appendChild(img);
             }
 
@@ -91,7 +91,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     document.addEventListener("keydown", function (event) {
-
         if (event.defaultPrevented) { // If the event has already been processed.
             return;
         }
@@ -101,32 +100,32 @@ document.addEventListener("DOMContentLoaded", function () {
     function checksLivesPictureStatus() {
         switch (LIVES) {
             case 6:
-                img.src = "../images/black_knight_all_limbs.png"
+                img.src = "../images/single_player/black_knight_all_limbs.png"
                 src.appendChild(img);
                 break;
 
             case 5:
-                img.src = "../images/black_knight_three_limbs.png"
+                img.src = "../images/single_player/black_knight_three_limbs.png"
                 src.appendChild(img);
                 break;
 
             case 4:
-                img.src = "../images/black_knight_two_limbs.png"
+                img.src = "../images/single_player/black_knight_two_limbs.png"
                 src.appendChild(img);
                 break;
 
             case 3:
-                img.src = "../images/black_knight_one_limb.png"
+                img.src = "../images/single_player/black_knight_one_limb.png"
                 src.appendChild(img);
                 break;
 
             case 2:
-                img.src = "../images/black_knight_no_limbs.png"
+                img.src = "../images/single_player/black_knight_no_limbs.png"
                 src.appendChild(img);
                 break;
 
             case 1:
-                img.src = "../images/gallows.png"
+                img.src = "../images/single_player/gallows.png"
                 src.appendChild(img);
                 break;
 
